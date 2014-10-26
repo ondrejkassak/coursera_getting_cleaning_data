@@ -19,6 +19,7 @@ Good luck!
 
 Solution
 =========
+
 1. Merge the training and the test sets to create one data set.
 ---------------------------------------------------------------
 At first we defined the variable storing path to dataset. It is used to simplify code when read data.
@@ -26,21 +27,24 @@ Then we read data from activity_labels and features files and set column names f
 We also read the test and train data and set them the column names. For both datasets (train, test) we bind 
 their data by columns. Next we bind both datasets into common one by rows.
 
-# 4. Appropriately label the data set with descriptive activity names.
-----------------------------------------------------------------------
+4. Appropriately label the data set with descriptive activity names.
+--------------------------------------------------------------------
 We label the dataset appropriately with descriptive names. We made it so far to have easier situation in part 2. and 3.
 
-# 2. Extract only the measurements on the mean and standard deviation for each measurement.
--------------------------------------------------------------------------------------------
+2. Extract only the measurements on the mean and standard deviation for each measurement.
+-----------------------------------------------------------------------------------------
 After naming the columns in dataset we created boolean vector containing TRUE value only for columns with mean, standard deviation and ids.
 We used it to get the subset selected columns from above described joined dataset.
 
-# 3. Use descriptive activity names to name the activities in the data set.
----------------------------------------------------------------------------
+3. Use descriptive activity names to name the activities in the data set.
+-------------------------------------------------------------------------
 To get descriptive activity names instead of numbers we merged dataset with text names by activity_type attribute.
 
-#5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
----------------------------------------------------------------------------------------------------------------------
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+--------------------------------------------------------------------------------------------------------------------
 Last we created tidy table containing for every unique pair of activity and subject, the means of individual variables. Before this action we 
 deleted the activity_labels column due to inability of making mean form text variable. After creation of tiny table, we added this column back.
 We also printed the output into textfile named tidy.txt.
+=======
+coursera_getting_cleaning_data
+==============================
