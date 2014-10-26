@@ -1,4 +1,4 @@
-HELPER VARAIBLES
+﻿HELPER VARAIBLES
 path_to_data - path to dataset, helper variable
 boolean_column_names - boolean vector containing true only for mean, standard deviation and ids from column_names variable
 

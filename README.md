@@ -45,6 +45,5 @@ To get descriptive activity names instead of numbers we merged dataset with text
 Last we created tidy table containing for every unique pair of activity and subject, the means of individual variables. Before this action we 
 deleted the activity_labels column due to inability of making mean form text variable. After creation of tiny table, we added this column back.
 We also printed the output into textfile named tidy.txt.
-=======
 coursera_getting_cleaning_data
-==============================
+
